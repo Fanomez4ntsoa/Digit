@@ -24,15 +24,16 @@
 	--bg-gradient-peach: linear-gradient(to right, #fff7f3, #fff7f3);
 
 	/* images */
-	--bg-cover: url("/img/bgimg1.png");
-	--bg-image1: url("/img/img1.png");
-	--bg-image2: url("/img/img2.png");
-	--bg-image3: url("/img/img3.png");
+	--bg-cover: url("../img/bgimg1.png");
+	--bg-image1: url("../img/img1.png");
+	--bg-image2: url("../img/img2.png");
+	--bg-image3: url("../img/img3.png");
 }
 * > * {
 	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
+	zoom: 95.5%;
 }
 a {
 	text-decoration: none;
@@ -162,7 +163,6 @@ ul {
 .link {
 	color: var(--text-dark2);
 	font-weight: bold;
-	font-size: 14px;
 }
 .link:hover {
 	color: var(--text-red);
@@ -188,7 +188,7 @@ ul {
 	background: var(--bg-cover);
 	object-fit: fill;
 }
-.d-iniine {
+.d-inline {
 	display: inline-block;
 }
 .d-block {
@@ -207,19 +207,69 @@ ul {
 	width: 50%;
 }
 
+/* ----------- MEDIA QUERY ----------- */
+/* for large screen sm(640px) */
+	@media (min-width: 640px) {
+		.container {
+			max-width: 640px;
+		}
+	}
+
+/* for large screen md(768px) */	
+	@media (min-width: 768px) {
+		.container {
+			max-width: 786px;
+		}
+	}
+/* for large screen lg(1024px) */
+	@media (min-width: 1024px) {
+		.container {
+			max-width: 1024px;
+		}
+		#nav {
+			flex-direction: row !important;
+		}
+		#nav .toggle-btn > button {
+			display: none;
+		}
+		.collapse {
+			max-height: initial !important;
+		}
+		.collapse ul {
+			flex-direction: row !important;
+		}
+		.active {
+			max-height: 100% !important
+		}
+	}
+/* for large screen xl(1280px) */
+	@media (min-width: 1280px) {
+		.container {
+			max-width: 1280px;
+		}
+		#nav {
+			background: transparent !important;
+		}
+		#nav .flex-initial ul button {
+			display: inline-block !important;
+		}
+	}
+
 /* ----------- Barre de Naviguation ----------- */
 #nav {
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
-	padding: 1rem 1.5rem;
+	/* padding: 1rem 1.5rem; */
+	padding: .5rem 1.5rem;
 	background: var(--text-light);
 	flex-direction: column;
 }
 #nav .collapse {
 	max-height: 0px;
 	overflow-y: hidden;
+	transition: all 1.0s ease;
 }
 #nav .collapse ul {
 	flex-direction: column;
@@ -245,7 +295,23 @@ ul {
 .active {
 	max-height: 50vh !important;
 }
-/* ----------- Variables ----------- */
+/* ----------- Espace publicitaire ----------- */
+#site-main .banner-area {
+	width: 100%;
+	position: relative;
+	background: var(--bg-cover) no-repeat;
+	background-size: 550px;
+	background-position-x: right;
+	z-index: -99;
+}
+#site-main .banner-area .banner-title {
+	height: 95vh;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 12rem;
+}
+
+	
 /* ----------- Variables ----------- */
 /* ----------- Variables ----------- */
 /* ----------- Variables ----------- */
