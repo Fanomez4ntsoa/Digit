@@ -213,6 +213,9 @@ ul {
 		.container {
 			max-width: 640px;
 		}
+		.sm-text-xl {
+			font-size: 3em;
+		}
 	}
 
 /* for large screen md(768px) */	
@@ -240,6 +243,9 @@ ul {
 		}
 		.active {
 			max-height: 100% !important
+		}
+		.lg-cols-3 {
+			grid-template-columns: repeat(3, minmax(0, 1fr));
 		}
 	}
 /* for large screen xl(1280px) */
@@ -306,13 +312,14 @@ ul {
 }
 #site-main .banner-area .banner-title {
 	height: 95vh;
-	margin-left: auto;
-	margin-right: auto;
 	padding-top: 12rem;
 }
 
 	
-/* ----------- Variables ----------- */
+/* ----------- Secteur de l'agence ----------- */
+#site-main .agency-area {
+	padding: 5em 0;
+}
 /* ----------- Variables ----------- */
 /* ----------- Variables ----------- */
 /* ----------- Variables ----------- */
