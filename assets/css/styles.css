@@ -45,7 +45,6 @@ ul {
 /* ----------- Global Classes ----------- */
 .text-dark {
 	color: var(--text-dark);
-	font-size: 14px;
 }
 .text-white {
 	color: var(--text-white);
@@ -392,4 +391,19 @@ ul {
 	padding: 2em 2.5em;
 	text-align: center;
 }
-/* ----------- Variables ----------- */
+
+/* ----------- zone des cartes ----------- */
+#site-main .card-area .grid {
+	column-gap: 4em;
+	row-gap: 2em;
+}
+
+/* ----------- espace de travail récent ----------- */
+#site-main .recent-work-area .images-flex .flex-item {
+	width: 360px;
+	margin-bottom: 50px;
+}
+#site-main .recent-work-area .images-flex .flex-item img {
+	border-radius: 10px;
+}
+/* ----------- zone des cartes ----------- */
