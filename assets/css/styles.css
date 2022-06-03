@@ -406,4 +406,12 @@ ul {
 #site-main .recent-work-area .images-flex .flex-item img {
 	border-radius: 10px;
 }
-/* ----------- zone des cartes ----------- */
+
+/* ----------- section articles  ----------- */
+#site-main .article-area .grid {
+	column-gap: 5em;
+}
+#site-main .article-area .card article {
+	border-radius: 10px;
+}
+/* ----------- section articles  ----------- */
