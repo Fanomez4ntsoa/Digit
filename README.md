@@ -5,3 +5,5 @@
 - Modern CSS, including flexbox and CSS Grid for layout.
 - Using Animate css / Rellax js.
 - Advanced responsive design using media queries.
+
+![preview img](/assets/img/capture.png)
