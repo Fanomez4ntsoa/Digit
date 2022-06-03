@@ -1,7 +1,4 @@
 
-
-
-
 //execute script after page load
 window.onload = function digital_fn() {
 
@@ -23,3 +20,8 @@ window.onload = function digital_fn() {
 		columnWidth: 80
 	})
 }
+
+//rellax js code
+var rellax = new Rellax(".rellax", {
+	center: true
+})
